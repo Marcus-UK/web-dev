@@ -18,10 +18,13 @@ get '/hello' do
   "Hi Keith"
 end
 
-get '/cat' do
-@random_name = ["Amigo", "Oscar", "Viking"].sample
+get '/named-cat' do
+p params
+@random_name = params[:name]
 erb(:index)
-  # '<div style="border: dashed 10px red">
-  #   <img src="http://bit.ly/1eze8aE">
-  # </div>'
+end
+
+get '/random-cat' do
+  @random_name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
