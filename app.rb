@@ -19,8 +19,8 @@ get '/hello' do
 end
 
 get '/cat' do
-
-  '<div style="border: dashed 10px red">
-    <img src="http://bit.ly/1eze8aE">
-  </div>'
+erb(:index)
+  # '<div style="border: dashed 10px red">
+  #   <img src="http://bit.ly/1eze8aE">
+  # </div>'
 end
