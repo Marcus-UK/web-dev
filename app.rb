@@ -17,3 +17,10 @@ end
 get '/hello' do
   "Hi Keith"
 end
+
+get '/cat' do
+
+  '<div style="border: dashed 10px red">
+    <img src="http://bit.ly/1eze8aE">
+  </div>'
+end
