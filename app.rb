@@ -19,6 +19,7 @@ get '/hello' do
 end
 
 get '/cat' do
+@random_name = ["Amigo", "Oscar", "Viking"].sample
 erb(:index)
   # '<div style="border: dashed 10px red">
   #   <img src="http://bit.ly/1eze8aE">
