@@ -18,14 +18,20 @@ get '/hello' do
   "Hi Keith"
 end
 
-get '/named-cat' do
+post '/named-cat' do
 p params
 @name = params[:name]
 @color = params[:color]
 erb(:index)
 end
 
-get '/random-cat' do
+post '/random-cat' do
   @random_name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
+end
+
+get '/cat-form' do
+    erb(:cat_form)
+
+
 end
